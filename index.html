@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+        <h1><b>Спорт клуб "Атлас"</h1></b>
+<style>
+        h3 {
+                text-align: left;
+        }
+        .myBotton {
+                background-color: #000;
+                border-radius: 90px;
+                border: 3px solid #c99951;
+                display: inline-block;
+                cursor: pointer;
+                color: #fff;
+                padding: 8px 25px;
+                text-decoration: none;
+        }
+        .myBotton:hover {
+                background-color: #a74e00;
+        }
+        .myBotton.active {
+                margin-top: 5%;
+        }
+        .wrapper {
+              width: 400px;  
+              height: 200px;
+              margin: 10px auto;
+              position: absolute;
+
+        }
+            ul.nav{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            .nav li { 
+                float: left;
+            }
+            ul.nav a {
+                display: block;
+                width: 5em;
+                padding:10px;
+                margin: 0 5px;
+                background-color: #F87E39;
+                border: 1px dashed #333;
+                text-decoration: none;
+                color: #333;
+                text-align: center;
+            }
+            ul.nav a:hover{
+                background-color: #333;
+                color: #f4f4f4;
+            }
+        </style>	
+        </head>
+        <body>
+<header>
+<div style="display: flex;">
+<!-- Розподіл на три колонки -->
+<nav>
+<ul class="nav">
+        <li><a href="index.html">Про клуб</a></li>
+        <li><a href="coaches.html">Тренери</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="reviews.html">Відгуки</a></li>
+        <li><a href="contacts.html">Контакти</a></li>   
+</ul>
+</nav>
+</header>
+<div style="flex-grow:1;">
+<p><i>«Алмаз» - це мережа спортклубів з сучасним якісним обладнанням, потужною вентиляцією та кондиціонуванням. Зі зручними умовами для тренувань і чесними та зрозумілими цінами без підступу. Тут завжди людно і весело, безліч обладнання для різноманітного та цікавого тренування, немає ніякого пафосу, і навіть прийшовши в перший раз в житті в будь-якій фізичній формі, Ви зможете відчути себе затишно як вдома і комфортно тренуватися в своє задоволення.
+</p></i></div>
+<div style="flex-grow:1;">
+<h2>Тренери</h2>
+                        <table border="2">    
+                                <tr>
+                                        <td>Анатолій Гонда</td>
+                                        <td>Дмитрій Писков</td>
+                                        <td>Александр Руден</td>
+                                </tr>
+                                <tr>
+                                        <td>Анастасія Бурко</td>
+                                        <td>Сергій Усов</td>
+                                        <td>Олеся Білкова</td>
+                                </tr>
+</table>
+</div> 
+<div style="flex-grow:1;">  
+                <h2>Галерея</h2>
+                <div onmouseover="btn_show()" onmouseover="btn_noshow()" class="wrapper"></div>
+                <script src="html.js">
+                </script>
+                </div>
+                <center><p style = "font-size: 20px; color: #333; font-weight: bold;" id = "num_img"></p>
+                </center>
+                <center><span class = "myBotton" onclick="image(0)">&lt;</span><span class = "myBotton" onclick ="image(1)">&gt;</span></center>
+                <center><iframe width="560" height="320" src="https://www.youtube.com/embed/DqAgB5FpEKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> 
+                </center>             
+</div>
+</iframe>
+<footer> 
+<h3>Всі права захищені</h3>
+</footer> 
+        </body>
+                
+                
